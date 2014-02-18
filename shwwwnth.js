@@ -110,7 +110,7 @@ run = function(array) {
             } else if (Array.isArray(array[i])) {
                 other = run(array[i]);
                 console.log(op, other);
-                other.connect(op, 0, i-0.5);
+                other.connect(op, 0.5, i-0.5);
             } else {
                 console.log('something weird: ', array[i]);
             }
